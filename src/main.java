@@ -67,13 +67,12 @@ public class main {
         printStrArr(decryptBin);
         System.out.println();
 
+        System.out.println("\n|--------test--------|");
         /*      PT = I hope I got this code right.
                     encrypted using https://www.dcode.fr/rc4-cipher with the same key as this program
                     This website uses one cycle of PRGA for its decryption therefore this program will not work
                         unless the numPRGA is set to 1 in getPRGA
          */
-
-        System.out.println("\n|--------test--------|");
         String[] ctTest = {"00011011", "00100001", "11000110", "10101101", "11111011", "00001100", "10000001", "01100111", "01000100", "01011001", "11100110", "10100101", "11000100", "10011101", "11001110", "10011101", "10111101", "11101100", "10111100", "11010011", "00101110", "11000100", "10101110", "00111111", "11111101", "01011111", "10111101", "01101100", "00110011"};
         String[] ctTestXOR = getXOR(ctTest, keyStreamBin);
         System.out.println("cipher text binary and ASCII");
